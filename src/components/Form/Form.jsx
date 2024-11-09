@@ -3,8 +3,6 @@ import style from "./Form.module.css";
 import { useState } from "react";
 
 export const Form = ({ onSubmit }) => {
-  console.log("onSubmit from Form", onSubmit);
-
   const [query, setQuery] = useState("");
   const handleChange = (e) => {
     setQuery(e.target.value);
